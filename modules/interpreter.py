@@ -8,5 +8,10 @@ def process_code (line:str) -> str:
     if line.startswith("گاو "):
         content = line[4:].strip()
         return f"os.system('cowsay {content}')"
+    if line.startswith("روباه "):
+        content = line[6:]
+        return f"os.system('cowsay -f fox {content}')"
+    
+
     else:
         return line
