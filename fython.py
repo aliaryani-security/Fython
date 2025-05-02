@@ -1,12 +1,15 @@
 #!/usr/bin/env python3
+from modules import interpreter
+import os
 
-def process_code (line:str) -> str:
-    if line.startswith("بگو "):
-        content = line[4:].strip()
-        return f"print ({content})"
-
-code = 'بگو "Hello World"'
-translated = process_code(code)
-print (translated)
-exec(translated)
+code = [
+    "بگو 'سلام دنیا'"
+    , "اجرا 'neofetch'"
+    , 'گاو "Hello from Fython , the Farsi Python \\!"'
+]
+for line in code:
+    if line:
+        translated = interpreter.process_code(line)
+        # print (translated)
+        exec(translated)
 
