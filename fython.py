@@ -2,14 +2,11 @@
 from modules import interpreter
 import os
 
-code = [
-    "بگو 'سلام دنیا'"
-    , "اجرا 'neofetch'"
-    , 'گاو "Hello from Fython , the Farsi Python \\!"'
-]
-for line in code:
-    if line:
-        translated = interpreter.process_code(line)
-        # print (translated)
-        exec(translated)
+with open("test_code.fy") as code:
+    for line in code:
+        if line:
+            # print (line)
+            translated = interpreter.process_code(line)
+            # print (translated)
+            exec(translated)
 
