@@ -1,6 +1,6 @@
 # Fython , the Farsi Python !
 > <br>
->🎈 It started as a bad joke between me and @ahjdev , and now I made it real !
+>🎈 It started as a bad joke between me and <a href="https://github.com/ahjdev">@ahjdev</a> , and now I made it real !
 > <br>
 > 
 >```"
